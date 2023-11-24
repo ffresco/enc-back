@@ -17,7 +17,8 @@ export class MenuController {
 
   @Post()
   create(@Body() createMenuDto: CreateMenuDto) {
-    return this.menuService.create(createMenuDto);
+    console.log(createMenuDto);
+    return this.menuService.createOrder(createMenuDto);
   }
 
   @Get()
